@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pylitsearch</title>
+</head>
+<body>
+    <h1>論文検索</h1>
+    <form method="POST">
+        <label for="search_query">検索クエリ:</label>
+        <input type="text" id="search_query" name="search_query" required>
+        <button type="submit">検索してDBに追加</button>
+    </form>
+    <br>
+    <a href="{{ url_for('papers') }}">登録論文一覧を見る</a>
+</body>
+</html>
